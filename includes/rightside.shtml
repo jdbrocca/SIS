@@ -1,0 +1,55 @@
+<script type="text/javascript">
+	var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+	var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+	var f = new Date();
+</script>
+
+<p id="fechaActual"></p>
+<div class="contacto" style="padding: 5px 20px 0px 20px; width: 220px;">
+	<p align="center"><span class="titulos-rightside">INICIO DE SESION</span></p>
+	<form name="frminiciosesion" action="">
+	<table width="220" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td>Usuario:</td>
+			<td align="right"><input type="text" id="usuario" style="width: 140px;"></td>
+		</tr>
+		<tr>
+			<td>Clave:</td>
+			<td align="right"><input type="password" id="clave" style="width: 140px;"></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="font-size: 10px;" align="center"><a href="nuevo-usuario.php">Nuevo Usuario</a>&nbsp;&nbsp;&nbsp;<a href="recuperar-clave.php">¿Olvidaste tu contraseña?</a></td>
+		</tr>
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" value="INGRESAR"></td>
+		</tr>
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+	</table>
+	</form>
+</div>
+
+<br>
+<p align="center"><span class="titulos-rightside">OFERTAS AGOSTO 2012</span></p>
+<div class="sliderContainer">
+	<a href="#siguiente" class="next" title="Siguiente"></a>
+    <a href="#anterior" class="prev" title="Anterior"></a>
+    <div id="slider">
+		<div class="slidesContainer">
+            <div class="slide"><img src="imagenes/oferta01.jpg" width="210" ></div>
+            <div class="slide"><img src="imagenes/oferta02.jpg" width="210" ></div>
+        </div> <!-- /slidesContainer -->
+    </div> <!-- /slider -->
+</div> <!-- /sliderContainer -->
+
+<script type="text/javascript">
+	$('#fechaActual').append(diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " del " + f.getFullYear());
+	$('#fechaActual').css({
+		'font-size' : '12px',
+		'text-align' : 'right',
+	});
+</script>

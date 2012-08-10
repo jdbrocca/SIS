@@ -1,0 +1,280 @@
+body{
+        background-attachment: fixed;
+	background-color: #425b80;
+        background-image: url('../imagenes/fondo2.jpg');
+        color: #555555;
+	font-family: Arial;
+	font-size: 14px;
+        line-height: 20px;
+	margin: 0px;
+        text-align: justify;
+}
+
+footer{
+        background-image: url('../imagenes/bg-footer.jpg');
+        display: inline-block;
+        font-size: 12px;
+        height: 100%;
+        line-height: 15px;
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+	width: 900px;
+}
+
+header{
+	height: 140px;
+	width: 900px;
+}
+
+a{
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+}
+
+h1{
+        color: #3c587d;
+        text-transform: uppercase;
+}
+
+a:hover{
+        color: #425b80;
+}
+
+#contactenos{
+        background-color: #d4dae2;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px #888;
+        margin: 0 auto;
+        padding: 20px;
+        width: 405px;
+
+        behaviour: url(PIE.htc);
+}
+
+#contactenos input{
+        color: #3c587d;
+        width: 400px;
+}
+
+#contactenos input[type=button]{
+        color: #3c587d;
+        width: 100px;
+}
+
+#contactenos textarea{
+        color: #3c587d;
+        height: 100px;
+        width: 400px;
+}
+
+#contenido{
+	background-color: #FFF;
+        float: left;
+        padding: 0px 30px 30px 30px;
+	width: 540px;
+}
+
+#contenido img{
+        border: 5px solid #a2a2a2;
+}
+
+#contenido #clientes img {
+        border: none;
+}
+
+#intereses{
+        background-color: #e0e7ed;
+        border: 1px solid #758b79;
+        border-radius: 10px;
+        float: left;
+        margin: 0px 0px 15px 0px;
+        padding: 0px 10px 15px 10px;
+        vertical-align: top;
+	width: 263px;
+
+        behaviour: url(PIE.htc);
+}
+
+#intereses img{
+        border: 0px;
+        padding: 0px;
+}
+
+
+#todo{
+	background-color: #FFFFFF;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        height: 100%;
+	margin: 0px auto;
+	width: 900px;
+}
+
+.slides_container {
+        width:900px;
+        height:250px;
+}
+.slides_container div {
+        width:900px;
+        height:250px;
+        display:block;
+}
+
+/*
+        Pagination
+*/
+
+.pagination {
+                margin:5px auto 0;
+                margin-left: -30px;
+                position: absolute;
+                top: 390px;
+                width:100px;
+                z-index: 9999;
+}
+
+.pagination li {
+        float:left;
+        margin:0 1px;
+        list-style:none;
+}
+
+.pagination li a {
+        display:block;
+        width:12px;
+        height:0;
+        padding-top:12px;
+        background-image: url('../imagenes/pagination.png');
+        background-position:0 0;
+        float:left;
+        overflow:hidden;
+}
+
+.pagination li.current a {
+        background-position:0 -12px;
+}
+
+.dimg{
+        float: right;
+        margin: 0px 0px 10px 10px;
+}
+
+.iimg{
+        float: left;
+        margin: 0px 10px 10px 0px;
+}
+
+.titulos-rightside{
+        color: #656565;
+        font-size: 15px;
+        font-weight: bold;
+}
+
+.subtitulo{
+        color: #3c587d;
+        font-size: 18px;
+        font-weight: bold;
+}
+
+/* Menu */
+/*
+nav{
+        background:#3C4042;
+        background: linear-gradient(center bottom, rgb(59,63,65) 9%, rgb(72,76,77) 55%, rgb(75,77,77) 78% );        
+        font: bold 12px Arial, Helvetica, Sans-serif;
+        height: 35px;
+        overflow: hidden;
+        width: 900px;
+}
+
+nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+}
+
+nav ul li{
+        float: left;
+}
+
+nav ul li a{
+        background:#3C4042;
+        background: linear-gradient(center bottom, rgb(59,63,65) 9%, rgb(72,76,77) 55%, rgb(75,77,77) 78% );
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+        border-right: 1px solid rgba(0,0,0,0.2);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 0 5px rgba(0, 0, 0, 0.1) inset;
+        color:#d4d4d4;
+        float: left;
+        padding: 10px 45px 10px 44px;
+        text-decoration:none;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.6);
+}
+
+nav li ul{
+        background:#3C4042;
+        background-image: linear-gradient( center bottom, rgb(77,79,79) 9%, rgb(67,70,71) 55%, rgb(69,70,71) 78% );
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4) inset;
+        left: -999em;
+        margin: 35px 0 0;
+        position: absolute;
+        width: 154px;
+        z-index: 9999;
+}
+
+nav li ul a{
+        background: none;
+        border: 0 none;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+        box-shadow: none;
+        margin-right: 0;
+        padding: 10px 15px 10px 15px;
+        width: 124px;
+}
+*/
+/* DropDown menu*/
+/*
+nav ul li a:hover,
+nav ul li:hover > a {
+        color: #5c9acd;
+        background:#3C4042;
+        background: linear-gradient( center bottom, rgb(77,79,79) 9%, rgb(67,70,71) 55%, rgb(69,70,71) 78% );
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 -1px #000;
+}
+
+nav li ul a:hover,
+nav ul li li:hover > a  {
+        color: #2c2c2c;
+        background: #5C9ACD;
+        background: linear-gradient( center bottom, rgb(61,111,177) 17%, rgb(80,136,199) 51%, rgb(92,154,205) 100% );
+        border-bottom: 1px solid rgba(0,0,0,0.6);
+        border-top: 1px solid #7BAED9;
+        text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+}
+
+nav li:hover ul {
+        left: auto;
+}
+
+nav li li ul {
+        margin: -1px 0 0 160px;
+        border-radius: 0 10px 10px 10px;
+        visibility:hidden;
+}
+
+nav li li:hover ul {
+        visibility:visible;
+}
+*/
+/* CSS3 design*/
+/*
+nav ul ul li:last-child > a {
+        border-radius:0 0 10px 10px;
+}
+
+nav ul ul ul li:first-child > a {
+        border-radius:0 10px 0 0;
+}*/

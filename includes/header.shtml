@@ -1,0 +1,22 @@
+<style type="text/css">
+	.datos{
+		color: #000;
+		font-size: 14px;
+		padding: 0px 10px 10px 0px;
+		text-align: right;
+	}
+</style>
+<table width="900" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><a href="/"><img src="imagenes/header-01.jpg" border="0"></a></td>
+		<td style="background-image: url('imagenes/header-02.jpg');" width="590" valign="bottom">
+			<div class="datos">
+				<div style="padding-left:50px;"><a href="#" alt="Facebook" title="Facebook"><img src="imagenes/facebook-icono.png" width="40"></a>&nbsp;<a href="#" alt="Twitter" title="Twitter"><img src="imagenes/twitter-icono.png" width="40"></a>&nbsp;<a href="#" alt="Youtube" title="Youtube"><img src="imagenes/youtube-icono.png" width="40"></a></div>
+				Av. José Pardo 15074<br>
+				Miraflores - Lima<br>
+				<strong>Telef:</strong> 467 0135<br>
+				<strong>E-mail:</strong> <a href="mailto:sistemasysoporte2012@gmail.com">sistemasysoporte2012@gmail.com</a>
+			</div>
+		</td>
+	</tr>
+</table>
